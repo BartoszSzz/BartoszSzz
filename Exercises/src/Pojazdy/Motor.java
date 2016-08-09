@@ -9,4 +9,12 @@ public class Motor extends Jednoslad {
 		super (marka, rokProdukcji, ostatniSerwis, pozycjaZaKierownica);
 		this.owiewka = owiewka;
 	}
+	
+	public void setOwiewka() {
+		this.owiewka = owiewka;
+	}
+	
+	public String GetOwiewka() {
+		return owiewka;
+	}
 }

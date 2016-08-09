@@ -8,4 +8,8 @@ public class SamochodOsobowy extends Samochod{
 		super(marka, rokProdukcji, ostatniSerwis, nadwozie, liczbaDrzwi);
 		this.liczbaPasazerow = liczbaPasazerow;
 	}
+	
+	public int liczbaPasazerow() {
+		return liczbaPasazerow;
+	}
 }

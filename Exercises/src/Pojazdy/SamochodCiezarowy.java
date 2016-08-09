@@ -9,4 +9,12 @@ public class SamochodCiezarowy extends Samochod{
 		super(marka, rokProdukcji, ostatniSerwis, nadwozie, liczbaDrzwi);
 		this.ladownosc = ladownosc;
 	}
+	
+	public void setLadownosc() {
+		this.ladownosc = ladownosc;
+	}
+	
+	public int getLadownosc() {
+		return ladownosc;
+	}
 }

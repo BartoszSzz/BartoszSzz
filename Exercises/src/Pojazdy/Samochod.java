@@ -9,4 +9,8 @@ public class Samochod extends Dwuslad{
 		super(marka, rokProdukcji, ostatniSerwis, nadwozie);
 		this.liczbaDrzwi = liczbaDrzwi;
 	}
+	
+	public int getLiczbaDrzwi() {
+		return liczbaDrzwi;
+	}
 }

@@ -9,4 +9,7 @@ public class Rower extends Jednoslad {
 		super (marka, rokProdukcji, ostatniSerwis, pozycjaZaKierownica);
 		this.rodzajRamy = rodzajRamy;
 	}
+	public String getRodzajRamy() {
+		return rodzajRamy;
+	}
 }
