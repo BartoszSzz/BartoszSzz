@@ -8,7 +8,8 @@ public class Factorial {
 		int counter = 1;
 		int result = 1;
 		while(counter <= n) {
-			result = result * counter + 1;
+			result = result * counter;
+			counter++; // w while inkrementacja jest zawsze na koñcu
 		}
 		return result;
 	}
@@ -17,7 +18,8 @@ public class Factorial {
 		int counter = 1;
 		int result = 1;
 		do {
-			result = result * counter + 1;
+			result = result * counter;
+			counter++;
 		} while (counter <= n);
 		return result;
 	}
