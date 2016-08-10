@@ -39,4 +39,10 @@ public abstract class Czworobok {
 	}
 	
 	public abstract long liczeniePola();
+	
+	public abstract long liczenieObwodu();
+	
+	protected abstract boolean czyDaneWejsciowePoprawne();
+	
+	protected abstract boolean czyDaSieZbudowacFigure();
 }

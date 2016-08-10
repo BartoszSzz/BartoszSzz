@@ -1,22 +1,23 @@
 package FiguryGeometryczne;
 
-public class Prostokat extends Czworobok {
-	public Prostokat(long bokA, long bokB) {
+public class Rownoleglobok extends Czworobok {
+	private long wysokosc;
+	
+	public Rownoleglobok(long bokA, long bokB, long wysokosc) {
 		this.bokA = bokA;
 		this.bokB = bokB;
-		this.bokC = bokA;
-		this.bokD = bokB;
+		this.wysokosc = wysokosc;
 		boolean daneOK = czyDaneWejsciowePoprawne();
 		boolean figuraOK = czyDaSieZbudowacFigure();
 		
-		if (daneOK == false || figuraOK == false) {
+		if(daneOK == false || figuraOK == false) {
 			System.out.println("Figura (prostok¹t) NIEPOPRAWNA !!!");
 		}
 	}
 
 	@Override
 	public long liczeniePola() {
-		long pole = bokA * bokB;
+		long pole = bokA * wysokosc;
 		return pole;
 	}
 
@@ -25,17 +26,21 @@ public class Prostokat extends Czworobok {
 		long obwod = bokA + bokB + bokC + bokD;
 		return obwod;
 	}
+	
+	public void setWysokosc(long wysokosc) {
+		this.wysokosc = wysokosc;
+	}
 
 	@Override
 	protected boolean czyDaneWejsciowePoprawne() {
-		// liczby muszê byæ wiêksze od 0
 		boolean poprawneDane = true;
-		if (bokA<=0 || bokB<=0 || bokC<=0 || bokD<=0) {
+		if (bokA<=0 || bokB<=0 || bokC<=0 || bokD<=0 || wysokosc<=0) {
 			poprawneDane = false;
 		}
 		return poprawneDane;
 	}
-
+	
+	// tego nie da siê sprawdziæ
 	@Override
 	protected boolean czyDaSieZbudowacFigure() {
 		return true;
