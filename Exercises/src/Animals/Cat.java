@@ -8,7 +8,7 @@ public class Cat extends Animal{
 		this.race = race;
 	}
 
-	@Override
+	@Override // nadpisywanie (rzadziej u¿ywane: przeci¹¿anie) motody
 	public void giveSound() {
 		System.out.println("Miau.");
 	}
