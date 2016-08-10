@@ -8,7 +8,7 @@ public class Dwuslad extends Pojazd {
 		super(marka, rokProdukcji, ostatniSerwis);
 		this.nadwozie = nadwozie;
 	}
-	public void setNadwozie() {
+	public void setNadwozie(String nadwozie) {
 		this.nadwozie = nadwozie;
 	}
 	

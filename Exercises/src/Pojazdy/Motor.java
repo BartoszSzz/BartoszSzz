@@ -10,7 +10,7 @@ public class Motor extends Jednoslad {
 		this.owiewka = owiewka;
 	}
 	
-	public void setOwiewka() {
+	public void setOwiewka(String owiewka) {
 		this.owiewka = owiewka;
 	}
 	

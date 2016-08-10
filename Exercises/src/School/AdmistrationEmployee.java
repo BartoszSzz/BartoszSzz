@@ -11,7 +11,7 @@ public class AdmistrationEmployee extends Employee {
 		return facoulty;
 	}
 	
-	public void setFacoulty() {
+	public void setFacoulty(String facoulty) {
 		this.facoulty = facoulty;
 	}
 }

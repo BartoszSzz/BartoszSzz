@@ -10,7 +10,7 @@ public class SamochodCiezarowy extends Samochod{
 		this.ladownosc = ladownosc;
 	}
 	
-	public void setLadownosc() {
+	public void setLadownosc(int ladownosc) {
 		this.ladownosc = ladownosc;
 	}
 	
