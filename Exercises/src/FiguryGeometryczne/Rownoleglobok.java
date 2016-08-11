@@ -11,7 +11,7 @@ public class Rownoleglobok extends Czworobok {
 		boolean figuraOK = czyDaSieZbudowacFigure();
 		
 		if(daneOK == false || figuraOK == false) {
-			System.out.println("Figura (prostok¹t) NIEPOPRAWNA !!!");
+			System.out.println("Figura (równoleg³obok) NIEPOPRAWNA !!!");
 		}
 	}
 

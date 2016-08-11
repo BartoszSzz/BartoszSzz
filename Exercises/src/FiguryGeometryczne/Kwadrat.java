@@ -16,7 +16,8 @@ public class Kwadrat extends Czworobok {
 
 	@Override
 	public long liczeniePola() {
-		long pole = bokA * bokA;
+		long pole = (long) Math.pow(bokA, 2);
+		//long pole = bokA * bokA; to i powy¿sze polecenia dzia³aj¹ tak samo
 		return pole;
 	}
 
