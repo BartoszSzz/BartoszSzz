@@ -11,7 +11,6 @@ public class Trapez extends Czworobok {
 		this.wysokosc = wysokosc;
 		boolean daneOK = czyDaneWejsciowePoprawne();
 		boolean figuraOK = czyDaSieZbudowacFigure();
-		
 		if (daneOK == false || figuraOK == false) {
 			System.out.println("Figura (trapez) NIEPOPRAWNA !!!");
 		}
@@ -37,10 +36,23 @@ public class Trapez extends Czworobok {
 		}
 		return poprawneDane;
 	}
-
+	
+	private long obliczanieOdcinkaCWysokosc() {
+		long odcinekCWysokosc = (long) Math.sqrt((long) Math.pow(bokC, 2) - (long) Math.pow(wysokosc, 2));
+		return odcinekCWysokosc;
+	}
+	
+	private long obliczanieOdcinkaDWysokosc() {
+		long odcinekDWysokosc = (long) Math.sqrt((long) Math.pow(bokD, 2) - (long) Math.pow(wysokosc, 2));
+		return odcinekDWysokosc;
+	}
+	
 	@Override
-	// tego nie da siê sprawdziæ
 	protected boolean czyDaSieZbudowacFigure() {
-		return true;
+		boolean poprawnaFigura = true;
+		if (bokB != bokA + obliczanieOdcinkaCWysokosc() + obliczanieOdcinkaDWysokosc()) {
+			poprawnaFigura = false;
+		}
+		return poprawnaFigura;
 	}
 }

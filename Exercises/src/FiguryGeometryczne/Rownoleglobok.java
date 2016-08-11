@@ -6,6 +6,8 @@ public class Rownoleglobok extends Czworobok {
 	public Rownoleglobok(long bokA, long bokB, long wysokosc) {
 		this.bokA = bokA;
 		this.bokB = bokB;
+		this.bokC = bokA;
+		this.bokD = bokB;
 		this.wysokosc = wysokosc;
 		boolean daneOK = czyDaneWejsciowePoprawne();
 		boolean figuraOK = czyDaSieZbudowacFigure();
