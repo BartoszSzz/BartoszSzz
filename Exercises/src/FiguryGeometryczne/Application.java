@@ -16,8 +16,8 @@ public class Application {
 		System.out.println("Obwód rownolegloboku " + three.liczenieObwodu());
 		System.out.println("Pole trapezu " + four.liczeniePola()); // warunki kompletne; konieczna zmiana typu danych na double
 		System.out.println("Obwod trapezu " + four.liczenieObwodu()); // warunki kompletne; konieczna zmiana typu danych na double
-		System.out.println("Pole trójk¹ta " + five.liczeniePola()); // brakuje warunku dla trójk¹ta rozwartok¹tnego
-		System.out.println("Obwód trójk¹ta " + five.liczenieObwodu()); // brakuje warunku dla trójk¹ta rozwartok¹tnego
+		System.out.println("Pole trójk¹ta " + five.liczeniePola()); // warunki nie zosta³y sprawdzone
+		System.out.println("Obwód trójk¹ta " + five.liczenieObwodu()); // warunki nie zosta³y sprawdzone
 		System.out.println("Pole ko³a " + six.liczeniePola()); // warunki kompletne
 		System.out.println("Obwód ko³a " + six.liczenieObwodu()); // warunki kompletne
 	} // dopisaæ formu³y, dziêki którym pola i obwody nie wyœwietla³yby siê jeœli figura bêdzie niepoprawna
