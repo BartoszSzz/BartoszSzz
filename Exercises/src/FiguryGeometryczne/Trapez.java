@@ -37,12 +37,12 @@ public class Trapez extends Czworobok {
 		return poprawneDane;
 	}
 	
-	private long obliczanieOdcinkaCWysokosc() {
+	private long obliczanieOdcinkaCWysokosc() { // jest do odcinek bêd¹cy podstaw¹ trójk¹ta prostok¹tnego wyznaczonego "wewn¹trz" trapezu, którego jedn¹ przyprostok¹tn¹ jest 'wysokoœæ' a drug¹ bokC
 		long odcinekCWysokosc = (long) Math.sqrt((long) Math.pow(bokC, 2) - (long) Math.pow(wysokosc, 2));
 		return odcinekCWysokosc;
 	}
 	
-	private long obliczanieOdcinkaDWysokosc() {
+	private long obliczanieOdcinkaDWysokosc() { // jest do odcinek bêd¹cy podstaw¹ trójk¹ta prostok¹tnego wyznaczonego "wewn¹trz" trapezu, którego jedn¹ przyprostok¹tn¹ jest 'wysokoœæ' a drug¹ bokD
 		long odcinekDWysokosc = (long) Math.sqrt((long) Math.pow(bokD, 2) - (long) Math.pow(wysokosc, 2));
 		return odcinekDWysokosc;
 	}

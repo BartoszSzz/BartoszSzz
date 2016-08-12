@@ -8,10 +8,10 @@ public class App {
 	}
 
 	public static boolean checkIfEvenNumber(int numberToCheck) {
-		boolean isEven = false;
+		boolean isEven = true;
 		
-		if((numberToCheck % 2) == 0) {
-			isEven = true;
+		if((numberToCheck % 2) != 0) {
+			isEven = false;
 		}
 		
 		return isEven;

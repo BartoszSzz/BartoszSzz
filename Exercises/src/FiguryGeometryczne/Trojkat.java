@@ -1,12 +1,12 @@
 package FiguryGeometryczne;
 
 public class Trojkat {
-	private long bokA;
-	private long bokB;
-	private long bokC;
-	private long wysokosc;
+	private double bokA;
+	private double bokB;
+	private double bokC;
+	private double wysokosc;
 	
-	public Trojkat(long bokA, long bokB, long bokC, long wysokosc) {
+	public Trojkat(double bokA, double bokB, double bokC, double wysokosc) {
 		this.bokA = bokA;
 		this.bokB = bokB;
 		this.bokC = bokC;
@@ -19,13 +19,13 @@ public class Trojkat {
 			}
 
 	}
-	public long liczeniePola() {
-		long pole = (bokC * wysokosc)/2;
+	public double liczeniePola() {
+		double pole = (bokC * wysokosc)/2;
 		return pole;
 	}
 	
-	public long liczenieObwodu() {
-		long obwod = bokA + bokB + bokC;
+	public double liczenieObwodu() {
+		double obwod = bokA + bokB + bokC;
 		return obwod;
 	}
 	
@@ -36,12 +36,22 @@ public class Trojkat {
 		}
 		return poprawneDane;
 	}
-// wysokosci nie da siê sprawdziæ!	
+
 	private boolean czyDaSieZbudowacFigure() {
 		boolean poprawnaFigura = true;
-		if (bokC>=bokA + bokB) {
+		if (bokC>=bokA + bokB || bokC != obliczanieOdcinkaAWysokosc() + obliczanieOdcinkaBWysokosc()) {
 			poprawnaFigura = false;
 		}
 		return poprawnaFigura;
+	}
+	
+	private double obliczanieOdcinkaAWysokosc() {// jest do odcinek bêd¹cy podstaw¹ trójk¹ta prostok¹tnego wyznaczonego "wewn¹trz" trójk¹ta, którego jedn¹ przyprostok¹tn¹ jest 'wysokoœæ' a drug¹ bokA
+		double odcinekAWysokosc = (double) Math.sqrt((double) Math.pow(bokA, 2) - (double) Math.pow(wysokosc, 2));
+		return odcinekAWysokosc;
+	}
+	
+	private double obliczanieOdcinkaBWysokosc() {// jest do odcinek bêd¹cy podstaw¹ trójk¹ta prostok¹tnego wyznaczonego "wewn¹trz" trójk¹ta, którego jedn¹ przyprostok¹tn¹ jest 'wysokoœæ' a drug¹ bokB
+		double odcinekBWysokosc = (double) Math.sqrt((double) Math.pow(bokB, 2) - (double) Math.pow(wysokosc, 2));
+		return odcinekBWysokosc;
 	}
 }
