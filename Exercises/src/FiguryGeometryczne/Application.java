@@ -1,6 +1,5 @@
 package FiguryGeometryczne;
-// ctrl + O wyœwietla wszystkie pola i metody z tej klasy, a drugi raz ctrl + O wszystkie pola 
-// i metody w tej klasie i we wszystkich po których dziedziczy
+// ctrl + O wyœwietla wszystkie pola i metody z tej klasy, a drugi raz ctrl + O wszystkie pola i metody w tej klasie i we wszystkich po których dziedziczy
 public class Application {
 	public static void main(String[] args) {
 		Czworobok one = new Kwadrat(3);
