@@ -26,7 +26,7 @@ public class Prostokat extends Czworobok {
 		return obwod;
 	}
 
-	@Override
+	@Override // nadpisywanie (rzadziej u¿ywane: przeci¹¿anie) motody
 	protected boolean czyDaneWejsciowePoprawne() {
 		// liczby muszê byæ wiêksze od 0
 		boolean poprawneDane = true;

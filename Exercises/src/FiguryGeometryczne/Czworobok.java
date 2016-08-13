@@ -1,7 +1,8 @@
 package FiguryGeometryczne;
 
+//idea abstracji = jako abstrakcjê uznaje siê tê rzecz, któr¹ na tym poziomie nie da siê zdefiniowaæ
 public abstract class Czworobok {
-	protected long bokA;
+	protected long bokA; // musi byæ protected a nie private, ¿eby klasy, które dziedzicz¹ widzia³y te pola
 	protected long bokB;
 	protected long bokC;
 	protected long bokD;
@@ -38,7 +39,8 @@ public abstract class Czworobok {
 		return bokD;
 	}
 	
-	public abstract long liczeniePola();
+	// jeœli choæ jedna metoda jest abstrakcyjna, to klasa te¿ musi byæ abstrakcjna
+	public abstract long liczeniePola(); 
 	
 	public abstract long liczenieObwodu();
 	
