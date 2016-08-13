@@ -1,5 +1,6 @@
 package Animals;
 
+//Klasa Dog jest subkas¹ klasy Animal - Dog is-a(n) Animal
 public class Dog extends Animal{
 
 	public Dog(int age, String race) {
