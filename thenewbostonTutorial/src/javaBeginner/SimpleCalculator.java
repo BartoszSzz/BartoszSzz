@@ -2,7 +2,7 @@ package javaBeginner;
 
 import java.util.Scanner;
 
-public class Calculator {
+public class SimpleCalculator {
 	public static void main(String[] args) {
 		Scanner numbers = new Scanner(System.in);
 		double fnum, snum, result;
