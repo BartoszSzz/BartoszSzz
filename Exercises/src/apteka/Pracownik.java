@@ -6,6 +6,7 @@ public abstract class Pracownik {
 	protected String surname;
 	protected String position;
 	protected String email;
+	protected double salary;
 	// dodaæ datê rozpoczêcia pracy
 	// dodaæ datê zakoñczenia pracy
 	
@@ -13,6 +14,7 @@ public abstract class Pracownik {
 		this.ID = ID;
 		this.name = name;
 		this.surname = surname;
+		this.email = getName() + "." + getSurname() + "@" + "apteka.pl";
 	}
 	
 	public int getID() {
@@ -35,19 +37,19 @@ public abstract class Pracownik {
 		return surname;
 	}
 	
-	public String setEmail() {
-		this.email = getName() + "." + getSurname() + "@" + "apteka.pl";
-		return email;
-	}
-	
 	public String getEmail() {
 		return email;
 	}
 	
-	public abstract String getPosition();
+	public double getSalary(){
+		return salary;
+	}	
 	
+	public String getPosition() {
+		return position;
+	}
+
 	public abstract boolean checkIfCanBeManager();
 	
 	public abstract boolean checkIfOnTraineeship();
-	
  }

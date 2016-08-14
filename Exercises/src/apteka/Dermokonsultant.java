@@ -7,6 +7,7 @@ public class Dermokonsultant extends Pracownik {
 		super(ID, name, surname);
 		this.representedFirm = representedFirm;
 		this.position = "Dermokonsultant";
+		this.salary = 2500;
 	}
 	
 	public void setRepresentedFirm(String representedFirm) {
@@ -16,13 +17,7 @@ public class Dermokonsultant extends Pracownik {
 	public String getRepresentedFirm() {
 		return representedFirm;
 	}
-
-	@Override
-	public String getPosition() {
-		// TODO Auto-generated method stub
-		return position;
-	}
-
+	
 	@Override
 	public boolean checkIfCanBeManager() {
 		// TODO Auto-generated method stub

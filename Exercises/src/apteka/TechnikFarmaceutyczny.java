@@ -7,13 +7,7 @@ public class TechnikFarmaceutyczny extends Pracownik {
 		super(ID, name, surname);
 		this.ifOnTraineeship = ifOnTraineeship;
 		this.position = "Technik farmaceutyczny";
-		// TODO Auto-generated constructor stub
-	}
-
-	@Override
-	public String getPosition() {
-		// TODO Auto-generated method stub
-		return position;
+		this.salary = setSalary(); // technik na sta¿u zarabia mniej ni¿ po sta¿u
 	}
 
 	@Override
@@ -29,5 +23,11 @@ public class TechnikFarmaceutyczny extends Pracownik {
 		}
 		return ifOnTraineeship;
 	}
-
+	
+	public double setSalary() {
+		if (ifOnTraineeship == true) {
+			return salary = 1500;
+		}
+		return salary = 2600;
+	}
 }

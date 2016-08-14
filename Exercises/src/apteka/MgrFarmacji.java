@@ -7,12 +7,7 @@ public class MgrFarmacji extends Pracownik {
 		super(ID, name, surname);
 		this.yearOfGraduation = yearOfGraduation;
 		this.position = "Magister farmacji";
-	}
-
-	@Override
-	public String getPosition() {
-		// TODO Auto-generated method stub
-		return position;
+		this.salary = 3000;
 	}
 	
 	public boolean checkIfCanBeManager() {
