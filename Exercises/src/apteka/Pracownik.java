@@ -5,9 +5,9 @@ public abstract class Pracownik {
 	protected String name;
 	protected String surname;
 	protected String position;
+	protected String email;
 	// dodaæ datê rozpoczêcia pracy
 	// dodaæ datê zakoñczenia pracy
-	// dodaæ automatycznie generowany adres e-mail
 	
 	public Pracownik(int ID, String name, String surname) {
 		this.ID = ID;
@@ -35,10 +35,19 @@ public abstract class Pracownik {
 		return surname;
 	}
 	
+	public String setEmail() {
+		this.email = getName() + "." + getSurname() + "@" + "apteka.pl";
+		return email;
+	}
+	
+	public String getEmail() {
+		return email;
+	}
+	
 	public abstract String getPosition();
 	
 	public abstract boolean checkIfCanBeManager();
 	
 	public abstract boolean checkIfOnTraineeship();
-		
+	
  }
