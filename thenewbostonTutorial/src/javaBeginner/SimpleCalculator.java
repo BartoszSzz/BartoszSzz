@@ -6,7 +6,6 @@ public class SimpleCalculator {
 	public static void main(String[] args) {
 		Scanner numbers = new Scanner(System.in);
 		double fnum, snum, result;
-		String calculationSymbol;
 		System.out.println("Podaj pierwsz¹ liczbê: ");
 		fnum = numbers.nextDouble();
 		System.out.println("Podaj drug¹ liczbê: ");
