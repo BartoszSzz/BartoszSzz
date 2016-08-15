@@ -1,5 +1,5 @@
-
-public class FibonacciNumber {
+// aplikacja jest niedokoñczona
+/*public class FibonacciNumber {
 	public static void main(String[] args) {
 		System.out.println(calculation(4));
 	}
@@ -11,4 +11,4 @@ public class FibonacciNumber {
 		}
 		return fn
 	}
-}
+}*/
