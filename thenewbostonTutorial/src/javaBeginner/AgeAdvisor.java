@@ -6,7 +6,7 @@ public class AgeAdvisor {
 	public static void main(String[] args) {
 		Scanner ageScanner = new Scanner(System.in);
 		int age;
-		System.out.println("Powiedz mi ile masz lat, a ja powiem Ci w jakim jesteœ okresie rozwoju cz³owieka.");
+		System.out.println("Powiedz mi ile masz lat, a ja powiem Ci w jakim jesteœ okresie rozwoju cz³owieka (podaj liczbê).");
 		age = ageScanner.nextInt();
 		
 		switch (age) {
@@ -34,7 +34,7 @@ public class AgeAdvisor {
 		case 75: case 76: case 77: case 78: case 79: case 80: case 81: case 82: case 83: case 84: case 85: case 86: case 87: case 88: case 89:	
 			System.out.println("Jesteœ w starczym wieku.");
 			break;
-		case 90: case 91: case 92: case 93: case 94: case 95: case 96: case 97: case 98: case 99: case 100:
+		case 90: case 91: case 92: case 93: case 94: case 95: case 96: case 97: case 98: case 99: case 100: case 101: case 102: case 103: case 104: case 105: case 106: case 107: case 108: case 109: case 110:
 			System.out.println("Jesteœ w wieku sêdziwym.");
 			break;
 		default:
