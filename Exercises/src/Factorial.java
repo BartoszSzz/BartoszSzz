@@ -17,6 +17,7 @@ public class Factorial {
 	public static int doFactorialCalculation(int n) {
 		int counter = 1;
 		int result = 1;
+		// ta pêtla wykona siê co najmniej raz. Oznacza to, ¿e jeœli ustawi siê counter = 5 lub wiêcej, to pêtla wyœwietli tylko tê liczbê.
 		do {
 			result = result * counter;
 			counter++;
