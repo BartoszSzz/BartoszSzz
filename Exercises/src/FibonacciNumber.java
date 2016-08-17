@@ -1,14 +1,21 @@
-// aplikacja jest niedokoñczona
-/*public class FibonacciNumber {
+public class FibonacciNumber {
 	public static void main(String[] args) {
-		System.out.println(calculation(4));
-	}
-	public static int calculation(int n) {
-		int f0 = 0;
-		int f1 = 1;
-		for(int i = 3; i <= n; i++) {
-			int fn; 
+		int n = 19; // miejsce w ci¹gu
+		int[] arrayF = new int[n+1];
+		arrayF[0] = 0; // zerowe miejsce w ci¹gu
+		arrayF[1] = 1; // pierwsze miejsce w ci¹gu
+		
+		System.out.println("F\tValue");
+		System.out.println("0\t" + arrayF[0]);
+		System.out.println("1\t" + arrayF[1]);
+		for(int counter = 2; counter <= n; counter++) {
+			int fn = 1; 
+			fn = arrayF[counter - 1] + arrayF[counter - 2];
+			arrayF[counter] = fn;
+			System.out.println(counter + "\t" + fn);
 		}
-		return fn
 	}
-}*/
+		
+	
+}
+
