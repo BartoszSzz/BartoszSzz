@@ -6,8 +6,10 @@ public class StoreApp {
 		duomox1.setAmount(5);
 		Medicine augmentin375 = new Medicine("Augmentin", 375, 21, "tabletka");
 		augmentin375.setAmount(10);
+		Medicine doxycyclinum = new Medicine("Doxycyclinum", 100, 10, "kapsu³ka");
 		
 		System.out.println(duomox1.getDose());
+		System.out.println(doxycyclinum.getAmount());
 		
 		ChangeService cs = new ChangeService(); // to polecenie tworzy obiekt który pozwala skorzystaæ z serwisu
 		cs.deleteMedicine(duomox1); // prefiks cs to wskazanie serwisu
