@@ -14,7 +14,7 @@ public abstract class Pracownik {
 		this.ID = ID;
 		this.name = name;
 		this.surname = surname;
-		this.email = getName() + "." + getSurname() + "@" + "apteka.pl";
+		this.email = getName().toLowerCase() + "." + getSurname().toLowerCase() + "@" + "apteka.pl";
 	}
 	
 	public int getID() {
@@ -39,6 +39,10 @@ public abstract class Pracownik {
 	
 	public String getEmail() {
 		return email;
+	}
+	
+	public void setSalary(double salary) {
+		this.salary = salary;
 	}
 	
 	public double getSalary(){

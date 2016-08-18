@@ -10,10 +10,18 @@ public class Application {
 		Pracownik kowalska = new Dermokonsultant(6, "Anna", "Kowalska", "Avene");
 		Pracownik morawska = new Dermokonsultant(7, "Iwona", "Morawska", "Vichy");
 		Pracownik brzozowska = new PomocApteczna(8, "Ewa", "Brzozowska");
-		System.out.println(lubicz.getSalary());
 		System.out.println(borowska.getSalary());
 		System.out.println(moniuszko.getSalary());
 		System.out.println(nowak.getSalary());
 		System.out.println(iszler.getEmail());
+		
+		System.out.println(lubicz.getSalary());
+		PayriseService ps = new PayriseService();
+		ps.raiseSalary(lubicz, 100);
+		System.out.println(lubicz.getSalary());
+		
+		System.out.println(kowalska.getSalary());
+		ps.decreaseSalary(kowalska, 100);
+		System.out.println(kowalska.getSalary());
 	}
 }
