@@ -1,6 +1,6 @@
 package apteka;
 
-public class Application {
+public class StaffApp {
 	public static void main(String[] args) {
 		Pracownik lubicz = new Kierownik(1, "Piotr", "Lubicz", 1987);
 		Pracownik iszler = new MgrFarmacji(2, "Monika", "Iszler", 2016);
