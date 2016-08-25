@@ -2,7 +2,7 @@ package javaBeginner;
 
 import java.util.Scanner;
 
-public class AverageCalculator {
+public class AverageCalculatorSimple {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		int total = 0;
