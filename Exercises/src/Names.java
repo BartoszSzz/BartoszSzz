@@ -9,7 +9,7 @@ public class Names {
 		input.close();
 		if(name.equals("Ewelina") || name.equals("Ewelinka")){
 			System.out.println("Jesteœ S³oneczkiem :)");
-		} else if(name.equals("Gutek") || name.equals("Augustyn") || name.equals("Guni")) {
+		} else if(name.equals("Gutek") || name.equals("Augustyn") || name.equals("Guni") || name.equals("Gustek")) {
 			System.out.println("Na pewno nie jesteœ psem :P");
 		} else if(name.equals("Bartek") || name.equals("Bartosz") || name.equals("Bartuœ")){
 			System.out.println("Jesteœ Kocurem ;)");
