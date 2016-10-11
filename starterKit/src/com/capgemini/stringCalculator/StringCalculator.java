@@ -18,25 +18,19 @@ public class StringCalculator implements IStringCalculator {
 			} else if (StringUtils.isNumeric(input)) {
 				resultOfCalculation = Integer.parseInt(input);
 
-				// input is numbers with another char(s) or only plus
 			} else {
-				// input is only plus
-				if (input == "+") {
-					throw new ArrayIndexOutOfBoundsException("String contains only +");
-				} else {
-					String[] parts = input.split("\\+");
-					// if sprawdzajace czy wszystkie elementy tablicy to plus
-					// lub liczba
-					for (int i = 0; i < parts.length; i++) {
+				String[] parts = input.split("\\+", -1);
+				for (int i = 0; i < parts.length; i++) {
+
+					// check if elements of array are numbers only
+					if (StringUtils.isNumeric(parts[i])) {
 						int partNumber = Integer.parseInt(parts[i]);
 						resultOfCalculation += partNumber;
+					} else {
+						throw new NumberFormatException("String contains numbers, + and/or another char(s)");
 					}
-					// } else {
-					// throw new NumberFormatException("String contains numbers,
-					// + and/or another char(s)");
 				}
 			}
-
 		} else {
 			throw new IllegalArgumentException("String doesn't contain numbers and +");
 		}

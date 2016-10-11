@@ -4,7 +4,7 @@ public class App {
 
 	public static void main(String[] args) {
 		StringCalculator calculations = new StringCalculator();
-		System.out.println(calculations.stringCalculator("2+2-3"));
+		System.out.println(calculations.stringCalculator("abs"));
 
 	}
 

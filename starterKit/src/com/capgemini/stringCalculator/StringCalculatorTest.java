@@ -1,14 +1,9 @@
 package com.capgemini.stringCalculator;
 
 import org.junit.Assert;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 
 public class StringCalculatorTest {
-
-	@Rule
-	public ExpectedException thrown = ExpectedException.none();
 
 	private String stringToCheck;
 	StringCalculator calculations = new StringCalculator();
@@ -62,7 +57,7 @@ public class StringCalculatorTest {
 	}
 
 	@Test
-	public void shouldReturnSumOfThreeNumbers() {
+	public void shouldReturnSumOfNumbers() {
 		// given
 		stringToCheck = "1+2+3";
 
@@ -78,7 +73,7 @@ public class StringCalculatorTest {
 		// given
 		stringToCheck = "abcd";
 
-		//
+		// when
 		int result = calculations.stringCalculator(stringToCheck);
 
 		// then
@@ -86,9 +81,9 @@ public class StringCalculatorTest {
 	}
 
 	@Test
-	public void shouldThrowsArrayIndexOutOfBoundsException() {
+	public void shouldThrowNumberFormatException() {
 		// given
-		stringToCheck = "+";
+		stringToCheck = "++";
 
 		// when
 		int result = calculations.stringCalculator(stringToCheck);
